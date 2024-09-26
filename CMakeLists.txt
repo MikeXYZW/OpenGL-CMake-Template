@@ -20,6 +20,6 @@ include(FetchContent)
 
 add_subdirectory("src")
 
-target_compile_definitions(demo PUBLIC -DGLEW_STATIC -DGLFW_INCLUDE_NONE)
+target_compile_definitions(demo PUBLIC -DGLFW_INCLUDE_NONE)
 target_link_options(demo PUBLIC -static)
 

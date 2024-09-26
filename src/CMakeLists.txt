@@ -17,7 +17,7 @@ if(NOT glfw_POPULATED)
     add_subdirectory(${glfw_SOURCE_DIR} ${glfw_BINARY_DIR})
 endif()
   
-# === Fetching GLEW ===
+# === Fetching GLAD ===
 
 FetchContent_Declare(
         glad
