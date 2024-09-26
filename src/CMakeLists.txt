@@ -44,13 +44,13 @@ FetchContent_MakeAvailable(glm)
 # === === === === === ===
 
 add_executable(
-    game
+    demo 
   
     main.cc
 )
 
 target_include_directories(
-    game 
+    demo 
 PRIVATE
     "src/"
 PUBLIC
@@ -60,7 +60,7 @@ PUBLIC
 )
 
 target_link_libraries(
-    game
+    demo 
 PRIVATE
     glfw
     glad

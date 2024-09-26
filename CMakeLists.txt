@@ -4,7 +4,7 @@ if(${CMAKE_VERSION} VERSION_LESS 3.12)
     cmake_policy(VERSION ${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION})
 endif()
 
-project(game VERSION 0.0.1 LANGUAGES C CXX)
+project(demo VERSION 0.0.1 LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -20,6 +20,6 @@ include(FetchContent)
 
 add_subdirectory("src")
 
-target_compile_definitions(game PUBLIC -DGLEW_STATIC -DGLFW_INCLUDE_NONE -DGAME_DEBUG)
-target_link_options(game PUBLIC -static)
+target_compile_definitions(demo PUBLIC -DGLEW_STATIC -DGLFW_INCLUDE_NONE)
+target_link_options(demo PUBLIC -static)
 
