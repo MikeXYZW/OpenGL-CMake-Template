@@ -1,3 +1,9 @@
+# ----------------------------------------------------
+# Credit to Jonathan Hamberg for the FetchContent code
+# https://jonathanhamberg.com/
+# https://github.com/Jonathan-Hamberg/			
+# ----------------------------------------------------
+
 # === Fetching GLFW3 ===
 
 FetchContent_Declare(

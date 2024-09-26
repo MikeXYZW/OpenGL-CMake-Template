@@ -4,7 +4,7 @@
 
 This repository contains CMake project files configured for starting out with OpenGL;
 
-The project is configured with C++17 standard in mind, it automatically fetches and stores necessary dependencies (`GLFW`, `glad` and `glm`). 
+The project is configured with C++17 standard in mind, on build it downloads and compiles necessary dependencies (`GLFW`, `glad` and `glm`). 
 These are all linked statically.
 
 ## Prerequisites 
