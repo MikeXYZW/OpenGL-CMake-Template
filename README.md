@@ -12,8 +12,9 @@ These are all linked statically.
 Available from shell: 
 
 1. C++ compiler (g++, c++)
-2. Make
+2. make
 3. CMake (version >= 3.12)
+4. Python interpreter 
 
 If you're on Windows, make sure these are in your PATH;
 
@@ -35,3 +36,8 @@ If you're on Windows, make sure these are in your PATH;
 
 The resulting executable should open an empty window with green background. 
 From there you can start building your own cool stuff :)
+
+## How to build further?
+
+Place new header/source files into the `/src` directory,
+add new source files to the `add_executable` list in the `src/CMakeLists.txt`;

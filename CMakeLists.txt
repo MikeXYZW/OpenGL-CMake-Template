@@ -19,7 +19,3 @@ set(ALLOW_DUPLICATE_CUSTOM_TARGETS TRUE)
 include(FetchContent)
 
 add_subdirectory("src")
-
-target_compile_definitions(demo PUBLIC -DGLFW_INCLUDE_NONE)
-target_link_options(demo PUBLIC -static)
-

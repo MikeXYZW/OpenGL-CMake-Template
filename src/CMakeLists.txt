@@ -1,8 +1,6 @@
-# ----------------------------------------------------
-# Credit to Jonathan Hamberg for the FetchContent code
-# https://jonathanhamberg.com/
-# https://github.com/Jonathan-Hamberg/			
-# ----------------------------------------------------
+# Credit to Jonathan Hamberg for the FetchContent code	#
+# https://jonathanhamberg.com/				#
+# https://github.com/Jonathan-Hamberg/			#
 
 # === Fetching GLFW3 ===
 
@@ -54,6 +52,9 @@ add_executable(
   
     main.cc
 )
+
+target_compile_definitions(demo PUBLIC -DGLFW_INCLUDE_NONE)
+target_link_options(demo PUBLIC -static)
 
 target_include_directories(
     demo 
